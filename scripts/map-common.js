@@ -2,6 +2,7 @@
     $('.map').each(function () {
         var location = $(this).attr("data-location");
         var marker = $(this).attr("data-marker");
+        var divId = $(this).attr("id");
         if (location) {
             ShowMap(location.split(","), divId,marker);
         }
