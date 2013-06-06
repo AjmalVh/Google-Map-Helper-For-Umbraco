@@ -7,8 +7,11 @@ Insert the following tag with specified parameters into your markup.
 
 <div class="map" data-location ="@Umbraco.Field('google')" data-marker="/images/map-icon.png">
 
-class="map" => This should not be changed.
-data-location => Insert the field of google map datatype in. For non umbraco users latitude, Longitude ad zoom as comma seperated values. Example data-location="data-location="-31.901725,115.80478300000004,13""
-data-marker => Custom image to use as marker. If not default marker will be shown.
+1) class="map" => This should not be changed.
+
+2) data-location => Insert the field of google map datatype in. For non umbraco users latitude, Longitude ad zoom as comma seperated values. 
+Example data-location="data-location="-31.901725,115.80478300000004,13""
+
+2) data-marker => Custom image to use as marker. If not default marker will be shown.
 
 Here we gO ..
