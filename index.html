@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Google Map Helper For Umbraco</title>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="/scripts/googlemap.infobubble.js"></script>
+    <script src="/scripts/map-common.js"></script>
+</head>
+    <body>
+        <div class="main">
+            <h1>Google Map Helper For Umbraco</h1>  
+            <!--
+                class="map" => This should not be changed.
+                data-location => Insert the field of google map datatype in. For non umbraco users latitude, Longitude ad zoom as comma seperated values. Example data-location="data-location="-31.901725,115.80478300000004,13""
+                data-marker => Custom image to use as marker. If not default marker will be shown.
+
+                //For webforms
+
+                <div id="gmap" data-location ="<umbraco:Item field='googleMapLocation' runat='server' />" data-marker="/images/map-icon.png" class="map project-map">
+
+                //For MVC (Umbraco 4.10)
+
+                <div id="gmap" data-location ="@Umbraco.Field('formTitle')" data-marker="/images/map-icon.png" class="map project-map">
+                -->
+            
+            <div class="map" data-location="-31.901725,115.80478300000004,13" data-marker= "/images/custom-marker.png"></div>
+        </div>
+    </body>
+</html>
