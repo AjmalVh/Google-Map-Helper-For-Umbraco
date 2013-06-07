@@ -3,6 +3,12 @@ Google-Map-Helper-For-Umbraco
 
 Plugin to easily include google map to your umbraco website.
 
+Include these scripts
+
+1) <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script> (Do no need this if you alrady included jquery in your page.)
+2) <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+
 Insert the following tag with specified parameters into your markup.
 
 <div class="map" data-location ="@Umbraco.Field('google')" data-marker="/images/map-icon.png">
